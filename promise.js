@@ -1,7 +1,7 @@
 const fs = require('fs');
-const { resolve } = require('path');
+require('path');
 const superagent = require('superagent');
-const { reject } = require('superagent/lib/request-base');
+require('superagent/lib/request-base');
 
 const readFilePro = (file) => {
   return new Promise((resolve, reject) => {
